@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<head>
+    <title>Fuel Efficiency</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body onload="init()">
+    <h1 id="intro">Fuel Efficiency of Automobiles in 2017</h1>
+    <div>
+        <span class="italic">By Amrutha Gujjar - UIUC CS 498 - July 2020</span>
+        <hr>
+        <h3>
+            Given the increasing effects of climate change, and the high volume of automobiles in the world, we must seek to better understand
+            the mileages of various automobiles. There are many factors that can affect the mileage of your car (See:
+            <a
+                href="https://www.fueleconomy.gov/feg/factors.shtml#:~:text=Vehicle%20Maintenance,older%20cars%20with%20carbureted%20engines.">Link</a>) but in this interactive visualization, we will explore 2017 data about the the respective highway and
+                city MPGs of automobiles, with respect to just a few of these factors, like engine cylinders, fuel type and
+                the make of the vehicle.
+        </h3>
+        <ul>
+            <li>
+                <a href="#one" class="contents">Which car brands will get you good mileage?</a>
+            </li>
+            <li>
+                <a href="#two" class="contents">Do Engine Cylinders Affect Mileage?</a>
+            </li>
+            <li>
+                <a href="#three" class="contents">How do highway and city mileages compare?</a>
+            </li>
+        </ul>
+        <hr>
+
+    </div>
+    <a href="#two" class="back">Next</a>
+    <h2 id="one">Which car brands will get you good mileage?</h2>
+    <svg id="scene1" width=1000 height=1000></svg>
+
+
+    <hr>
+    <a href="#intro" class="back">Back to Top</a>
+    <a href="#one" class="back">Previous</a>
+    <a href="#three" class="back">Next</a>
+
+    <h2 id="two">Do Engine Cylinders Affect Mileage?</h2>
+    <svg id="scene2" width=1000 height=400></svg>
+    <hr>
+
+    <a href="#intro" class="back">Back to Top</a>
+    <a href="#two" class="back">Previous</a>
+    <h2 id="three">How do highway and city mileages compare?</h2>
+    <svg id="scene3" width=1000 height=1000></svg>
+
+    <!-- Script -->
+    <script src="vis.js"></script>
+
+    <hr>
+    <a href="#intro" class="back">Back to Top</a>
+    <h2>About this Visualization</h2>
+    <p>
+        This is a narrative visualization created for the CS 498 Data Visualization course. This visualization uses the 'drill-down'
+        methodology to help you better understand the mileage capabilities of various vehicles in 2017.
+    </p>
+
+    <h3>Scenes</h3>
+    <p>todo</p>
+    <h3>Annotations</h3>
+    <p>todo</p>
+    <h3>Parameters</h3>
+    <p>todo</p>
+    <h3>Triggers</h3>
+    <p>todo</p>
+
+    <hr>
+
+    <p>
+        <a href="#intro" class="back">Back to Top</a>
+
+        <h2>Acknowledgements</h2>
+        <p>Listed here are the various sources I used for learning about D3. Elements of this visualization are drawn from the examples
+            cited below.
+        </p>
+        <ul>
+            <li>
+                <a href="https://flunky.github.io/cars2017.csv">Data Source</a>
+            </li>
+            <li>
+                <a href="https://bl.ocks.org/d3noob/4e4485d94aebf63ae8059258c40f2609">Tooltips</a>
+            </li>
+            <li>
+                <a href="https://www.d3-graph-gallery.com/graph/bubble_tooltip.html">Tooltips 2</a>
+            </li>
+            <li>
+                <a href="https://observablehq.com/@d3/d3-scaleordinal">ScaleOrdinal</a>
+            </li>
+            <li>
+                <a href="https://www.d3-graph-gallery.com/graph/bubble_template.html">Opacity change on hover</a>
+            </li>
+        </ul>
+    </p>
+</body>
+</html>
