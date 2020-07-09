@@ -144,7 +144,7 @@ async function load1() {
             .enter()
             .append("rect")
             .attr("x", function (d, i) { return margin.left + makeScale(makes[i]); })
-            .attr("y", function (d, i) { return y(highway_mpgs[i]) + 10; })
+            .attr("y", function (d, i) { return y(highway_mpgs[i]); })
             .attr("width", makeScale.bandwidth() - 10)
             .attr("height", function (d, i) { return height - y(highway_mpgs[i]); })
             .attr("fill", "#5E4FA2").on("mouseover", function (d, i) {
@@ -170,14 +170,14 @@ function change(setting) {
             .transition()
             .duration(2000)
             .attr("fill", "#5E4FA2")
-            .attr("y", function (d, i) { return y(highway_mpgs[i]) + 10; })
+            .attr("y", function (d, i) { return y(highway_mpgs[i]); })
             .attr("height", function (d, i) { return height - y(highway_mpgs[i]); })
     } else {
         scene1.selectAll("rect")
             .transition()
             .duration(2000)
             .attr("fill", "#66C2A5")
-            .attr("y", function (d, i) { return y(city_mpgs[i]) + 10; })
+            .attr("y", function (d, i) { return y(city_mpgs[i]); })
             .attr("height", function (d, i) { return height - y(city_mpgs[i]); })
     }
 }
